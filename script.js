@@ -70,11 +70,6 @@ class MyButton extends HTMLElement {
 // Register the custom element
 customElements.define('my-button', MyButton);
 
-document.querySelector(".my-btn").addEventListener("click", function() {
-  console.log("CLICK");
-});
-
-
 // List
 class MyList extends HTMLElement {
   constructor() {
