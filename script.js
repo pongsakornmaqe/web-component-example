@@ -118,10 +118,12 @@ class MyList extends HTMLElement {
   async fetchPost() {
     this.setAttribute("is-loading", true);
 
-    const resPost = await fetch('http://maqe.github.io/json/posts.json');
+    // Ref: 'http://maqe.github.io/json/posts.json'
+    const resPost = await fetch('https://api.npoint.io/988d22faf07e7d0d9950');
     const postData = await resPost.json();
 
-    const resAuthor = await fetch('http://maqe.github.io/json/authors.json');
+    // Ref: 'http://maqe.github.io/json/authors.json'
+    const resAuthor = await fetch('https://api.npoint.io/727f7e13f9b5aaa5f58c');
     const authorData = await resAuthor.json();
 
     this.transformPostData(postData, authorData);
