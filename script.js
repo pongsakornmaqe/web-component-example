@@ -79,6 +79,7 @@ class MyList extends HTMLElement {
     this.attachShadow({ mode: 'open' });
 
     this.formatPostData = [];
+    this.theme = this.getAttribute("theme");
   }
 
   static get observedAttributes() {
